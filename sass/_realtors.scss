@@ -1,0 +1,6 @@
+@use "base.scss" as *;
+
+.realtors{
+    background-color: $color-secondary;
+    grid-column:   col-end 7 / full-end;
+}
