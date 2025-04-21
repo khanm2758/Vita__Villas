@@ -1,3 +1,6 @@
+
+// Color Variables
+
 $color-primary: #c69963;
 $color-primary-dark: #b28451;
 $color-secondary: #101d2c;
@@ -10,6 +13,14 @@ $color-grey-dark-2: #6d5d4b;
 
 $font-primary: "Nunito", sans-serif;
 $font-display: "josefin Sans", sans-serif;
+
+// helper class of margin-bottom
+.mb-sm{margin-bottom: 2rem;}
+.mb-md{margin-bottom: 3rem;}
+.mb-lg{margin-bottom: 4rem;}
+.mb-hg{margin-bottom: 8rem;}
+
+//============================================================================
 
 *,
 *::before,
