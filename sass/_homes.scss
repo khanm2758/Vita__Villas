@@ -53,6 +53,8 @@
     z-index: 2;
     transform: translateY(50%);
   }
+
+
   // define flex-box
   &__location,
   &__icon,
@@ -61,23 +63,25 @@
   &__price {
     display: flex;
     align-items: center;
-  
+    column-gap: 1.5rem;
     font-size: 1.5rem;
   }
   &__icon {
     fill: $color-primary;
     width: 2rem;
     height: 2rem;
-    margin-right: 1rem;
+   // margin-right: 1rem;
   }
 
-  &__division {
+  &__division, &__room {
+      text-transform: uppercase;
   }
 
   &__room,
   &__location {
     margin-top: 2.5rem;
   }
+
   &__area {
   }
 
