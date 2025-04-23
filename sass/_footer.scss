@@ -1,6 +1,7 @@
 @use "base.scss" as *;
 
-.footer{
-    background-color: $color-secondary;
-    grid-column: full-start / full-end;
+.footer {
+  background-color: $color-secondary;
+  grid-column: full-start / full-end;
+  padding: 1rem;
 }
