@@ -21,7 +21,7 @@
     }
     &__press-logos-title{
         font-size: 1.4rem;
-        color: $color-grey-light-1;
+        color: $color-grey-light-2;
         text-transform: uppercase;
 
         // grid define
@@ -39,7 +39,7 @@
         }
     }
     &__press-logos{
-        cursor: pointer;
+       
         // define grid
         display: grid;
         grid-template-columns: repeat(5, 1fr);
@@ -47,8 +47,9 @@
         justify-items: center;
 
         img{
+            cursor: pointer;
             height: 3.5rem;
-            filter: brightness(60%)
+            filter: brightness(50%)
         }
     }
 
