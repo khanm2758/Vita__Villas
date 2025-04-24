@@ -20,6 +20,10 @@ $font-display: "josefin Sans", sans-serif;
 .mb-lg{margin-bottom: 4rem;}
 .mb-hg{margin-bottom: 8rem;}
 
+// Responsive elements
+$bp-largest: 75em ;// 1200px / 16
+$bp-medium: 50em; // 800 / 16
+$bp-small: 31.25em; // 500 / 16
 //============================================================================
 
 *,
@@ -32,6 +36,11 @@ $font-display: "josefin Sans", sans-serif;
 html {
   box-sizing: border-box;
   font-size: 62.5%; // 10/16 = 62.5%. we reset browser default 16px font size to 10px
+
+  @media only screen and (max-width: $bp-largest) {
+      font-size: 50%;
+  }
+
 }
 body {
   font-family: $font-display;
@@ -46,4 +55,10 @@ body {
   grid-template-columns:[sidebar-start] 0rem [sidebar-end full-start] minmax(8rem, 1fr)
     [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end]
     minmax(8rem, 1fr) [full-end]; // 1120 / 8 = 140 or 14rem
+
+
+
+    @media only screen and (max-width: $bp-medium) {
+      grid-template-rows: 80vh repeat(6, min-content);
+    }
 }
