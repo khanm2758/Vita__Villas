@@ -13,6 +13,7 @@
   justify-items: center;
   align-items: center;
   gap: 1rem;
+
   &__item {
   }
   &__link:link,
@@ -22,7 +23,7 @@
     text-transform: uppercase;
     color: #fff;
     font-family: $font-display;
-    text-align: center;
+   
     display: block;
     padding: 1.4rem 3rem;
     transition: all 0.3s;

@@ -1,6 +1,60 @@
 @use "base.scss" as *;
 
 .header{
-    background-color: $color-grey-dark-1;
     grid-column: full-start / col-end 7;
+    background-image: linear-gradient(rgba($color-secondary, .93), rgba($color-secondary, .93)) ,url("../img/header-img/background-img.jpg");
+    background-size: cover;
+    background-position:top right;
+    padding: 8rem;
+    padding-top: 4rem;
+    // define grid
+    display: grid;
+    grid-template-rows: 1fr min-content 6rem 1fr;
+    grid-template-columns: max-content;
+    row-gap: 1.5rem;
+    justify-content: center;
+
+    &__logo{
+        height: 4rem;
+        justify-self: center;
+
+    }
+    &__press-logos-title{
+        font-size: 1.4rem;
+        color: $color-grey-light-1;
+        text-transform: uppercase;
+
+        // grid define
+        display: grid;
+        grid-template-columns: 1fr max-content 1fr;
+        column-gap: 2rem;
+        align-items: center;
+
+        &::before,
+        &::after{
+            content: "";
+            height: 1px;
+            background-color: currentColor;
+            display: block;
+        }
+    }
+    &__press-logos{
+        cursor: pointer;
+        // define grid
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        column-gap: 2rem;
+        justify-items: center;
+
+        img{
+            height: 3.5rem;
+            filter: brightness(60%)
+        }
+    }
+
+    &__btn{
+        justify-self: start;
+        align-self: self-start;
+        margin-top: 2rem;
+    }
 }
