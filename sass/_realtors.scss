@@ -4,9 +4,7 @@
     background-color: $color-secondary;
     grid-column:   col-end 7 / full-end;
 
-    @media only screen and (max-width: $bp-medium) {
-        grid-column: full-start / full-end;
-      }
+  
     padding: 4rem;
     
       // define grid
@@ -20,6 +18,10 @@
     //     padding-bottom: 2rem;
     //     text-align: center;
     // }
+
+    @media only screen and (max-width: $bp-medium) {
+        grid-column: full-start / full-end;
+      }
 
     &__list{
         // define grid
